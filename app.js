@@ -55,15 +55,14 @@ for ( let chiave in membriTeam) {
     console.log('Il nome:'+' ' + nomeTeam +' ' + 'Ruolo del componente del team' +ruoloTeam+' ' + 'foto teserra' +' ' + fotoTeam)
 }
 
-
 // MILESTONE 2:
 // Stampare le stesse informazioni su DOM sotto forma di stringhe
 
-// for ( let i = 0; i < membriTeam.length; i++){
-//     let correctMembri = membriTeam[i]
+ for ( let i = 0; i < membriTeam.length; i++){
+    let correctMembri = membriTeam[i]
 
-//     console.log(correctMembri)
-// }
+    console.log(correctMembri)
+}
 
 // BONUS 1:
 // Trasformare la stringa foto in una immagine effettiva
