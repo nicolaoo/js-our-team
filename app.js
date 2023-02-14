@@ -34,9 +34,16 @@ const membriTeam =[ {
 
 console.log(membriTeam)
 
-
 // MILESTONE 1:
 // Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto (in questo fase usiamo il ciclo for…in )
+
+for ( let chiave in membriTeam) {
+    console.log(membriTeam[chiave].Nome)
+    console.log(membriTeam[chiave].Ruolo)
+    console.log(membriTeam[chiave].Foto)
+}
+
+
 // MILESTONE 2:
 // Stampare le stesse informazioni su DOM sotto forma di stringhe
 // BONUS 1:
