@@ -1,7 +1,4 @@
-let nomeEl = document.querySelector('.nome')
-let ruoloEl = document.querySelector('.ruolo')
-let fotoEl = document.querySelector('.foto')
-
+let tableTeamEl = document.getElementById('membri')
 
 
 // MILESTONE 0:
@@ -61,7 +58,24 @@ for ( let chiave in membriTeam) {
  for ( let i = 0; i < membriTeam.length; i++){
     let correctMembri = membriTeam[i]
 
-    console.log(correctMembri)
+    let  nomeMembro = correctMembri.Nome
+    let  ruoloMembro = correctMembri.Ruolo
+    let  fotoMembro = correctMembri.Foto
+
+    console.log(nomeMembro)
+    console.log(ruoloMembro)
+    console.log(fotoMembro)
+
+    const table = 
+    `<tr>
+        <td>${nomeMembro}</td>
+        <td>${ruoloMembro}</td>
+        <td>${fotoMembro}</td>
+    </tr>`
+
+    console.log(table)
+    tableTeamEl.innerHTML += table
+
 }
 
 // BONUS 1:
