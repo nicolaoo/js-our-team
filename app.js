@@ -1,4 +1,5 @@
 let tableTeamEl = document.getElementById('membri')
+let cardEl = document.getElementById('nome-ruolo')
 
 
 // MILESTONE 0:
@@ -21,7 +22,7 @@ const membriTeam =[ {
 {
     Nome: 'Angela Lopez',
     Ruolo: 'Social Media Manager',
-    Foto: 'angela-lopez-social-media-manager.jpg'
+    Foto: `<img src="./img/angela-caroll-chief-editor.jpg" class="card-img-top" alt="...">`
 },
 {
     Nome: 'Scott Estrada',
@@ -70,7 +71,7 @@ for ( let chiave in membriTeam) {
     `<tr>
         <td>${nomeMembro}</td>
         <td>${ruoloMembro}</td>
-        <td>${fotoMembro}</td>
+        <td >.${fotoMembro}</td>
     </tr>`
 
     console.log(table)
@@ -80,5 +81,31 @@ for ( let chiave in membriTeam) {
 
 // BONUS 1:
 // Trasformare la stringa foto in una immagine effettiva
+for (let i = 0; i < membriTeam.length; i++){
+    const membriCard = membriTeam[i]
+    
+    let nomeCard = membriCard.Nome
+    let ruoloCard = membriCard.Ruolo
+    let fotoCard = membriCard.Foto
+
+
+    const card = 
+    `<div class="card col-4 p-0">
+        <img src="${fotoCard}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h1>
+                ${nomeCard}
+            </h1>
+            <p>
+                ${ruoloCard}
+            </p>
+        </div>
+    </div>`
+    
+    
+
+    cardEl.innerHTML += card
+}
+
 // BONUS 2:
 // Organizzare i singoli membri in card/schede (trovato un esempio allegato, ma siete liberi di gestire la grafica a vostro piacimento)
