@@ -1,3 +1,9 @@
+let nomeEl = document.querySelector('.nome')
+let ruoloEl = document.querySelector('.ruolo')
+let fotoEl = document.querySelector('.foto')
+
+
+
 // MILESTONE 0:
 // Creare l’array di oggetti con le informazioni fornite.
 const membriTeam =[ {
@@ -41,11 +47,24 @@ for ( let chiave in membriTeam) {
     console.log(membriTeam[chiave].Nome)
     console.log(membriTeam[chiave].Ruolo)
     console.log(membriTeam[chiave].Foto)
+    
+    let nomeTeam = membriTeam[chiave].Nome
+    let ruoloTeam = membriTeam[chiave].Ruolo
+    let fotoTeam = membriTeam[chiave].Foto
+
+    console.log('Il nome:'+' ' + nomeTeam +' ' + 'Ruolo del componente del team' +ruoloTeam+' ' + 'foto teserra' +' ' + fotoTeam)
 }
 
 
 // MILESTONE 2:
 // Stampare le stesse informazioni su DOM sotto forma di stringhe
+
+// for ( let i = 0; i < membriTeam.length; i++){
+//     let correctMembri = membriTeam[i]
+
+//     console.log(correctMembri)
+// }
+
 // BONUS 1:
 // Trasformare la stringa foto in una immagine effettiva
 // BONUS 2:
