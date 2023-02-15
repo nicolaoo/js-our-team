@@ -7,32 +7,32 @@ let cardEl = document.getElementById('nome-ruolo')
 const membriTeam =[ {
     Nome: 'Wayne Barnett',
     Ruolo: 'Founder & CEO',
-    Foto: 'wayne-barnett-founder-ceo.jpg'
+    Foto: './img/angela-caroll-chief-editor.jpg'
 },
 {
     Nome: 'Angela Caroll',
     Ruolo: 'Chief Editor',
-    Foto: 'angela-caroll-chief-editor.jpg'
+    Foto: './img/angela-lopez-social-media-manager.jpg'
 },
 {
     Nome: 'Walter Gordon',
     Ruolo: 'Office Manager',
-    Foto: 'walter-gordon-office-manager.jpg'
+    Foto: './img/angela-lopez-social-media-manager.jpg'
 },
 {
     Nome: 'Angela Lopez',
     Ruolo: 'Social Media Manager',
-    Foto: `<img src="./img/angela-caroll-chief-editor.jpg" class="card-img-top" alt="...">`
+    Foto: './img/scott-estrada-developer.jpg'
 },
 {
     Nome: 'Scott Estrada',
     Ruolo: 'Developer',
-    Foto: 'scott-estrada-developer.jpg'
+    Foto: './img/walter-gordon-office-manager.jpg'
 },
 {
     Nome: 'Barbara Ramos',
     Ruolo: 'Graphic Designer',
-    Foto: 'barbara-ramos-graphic-designer.jpg'
+    Foto: './img/wayne-barnett-founder-ceo.jpg'
 },
 ]
 
@@ -71,7 +71,7 @@ for ( let chiave in membriTeam) {
     `<tr>
         <td>${nomeMembro}</td>
         <td>${ruoloMembro}</td>
-        <td >.${fotoMembro}</td>
+        <td>.${fotoMembro}</td>
     </tr>`
 
     console.log(table)
